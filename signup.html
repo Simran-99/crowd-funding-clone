@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <head>
-    <title>Sign up</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Form</title>
 </head>
 <body>
-    <header class="signup-header">
+   <h3>Registeration form</h3>
+    <form method="get">
+        <!--get used to request data from a specific resource-->
+        <!-- through post method we provide the data-->
+        First name:<input type="text" name="first name"><br><br>
+        Last name:<input type="text" name="last name"><br><br>
+        Email:<input type="email" name="email" required><br><br>
+        Password:<input type="password" name="password" minlength="5"><br><br>
+        Date Of Birth:<input type="date" name="date"><br><br>
+        Gender<br>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="Female">Female
+        <input type="radio" name="gender" value="others">others<br><br>
+        Total members in the family:<input type="number" name="Enter the number"><br><br>
+        Earning members in the family:<input type="number" name="Enter the number"><br>
+        Any member with disability:<input type="checkbox">yes
+        <input type="checkbox">no<br><br>
+        Number of kids:<select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        </select><br><br>
+        Approximate family income:<input type="number" name="income"><br><br>
         
-    </header>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        
+        <input type="submit" name="submit">
+        <input type="reset" name="reset"><br>
+        
+        
+    </form>
 </body>
+</html>
